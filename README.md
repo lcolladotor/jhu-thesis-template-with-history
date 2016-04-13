@@ -2,14 +2,56 @@ JHU Thesis Readme
 =================
 Author: R. Jacob Vogelstein <br>
 Updated by Noah J. Cowan, March 1, 2010 <br>
-Updated by Brian D. Weitzner, April 29, 2014
-
+Updated by [Brian D. Weitzner](https://github.com/weitzner), April 29, 2014 <br>
+Updated by [John Muschelli](https://github.com/muschellij2), January 29, 2016 and now uses a makefile as available [here](https://github.com/muschellij2/PhD_Thesis) <br>
+Updated by [Leonardo Collado Torres](https://github.com/lcolladotor) on April 13, 2016 as available [here](https://github.com/lcolladotor/jhu-thesis-template)
 
 This archive is intended to simplify the process of creating a thesis
 in LaTeX that complies with the JHU formatting requirements.  
 
-Quick Start
------------
+# Makefile version
+
+Muschelli added a `makefile` and `Rnw` files to his thesis. Collado Torres simply took Muschelli's thesis and made it into a template. The rest of the README is as-is from the time Weitzner modified. To use this version you will have to modify the `root.tex` file and add chapters as necessary. Then you will have to update the `makefile` with the names of the new chapters. 
+
+If you want to reproduce the current `PhD_Thesis.pdf` file, simply run
+
+```sh
+make
+```
+
+To clean the files that you won't need, run
+
+```sh
+make clean
+```
+
+To open the PDF file run
+
+```sh
+make open
+```
+
+Finally to start editing `root.tex` run
+
+```sh
+make edit
+```
+
+The file `RJournal_nogeom.sty` is used to change the color of some links and other style changes.
+
+It might be best to simply clone this repository, start editing and committing your changes in case you want to rollback or remember why you changed something. 
+
+If you want to check a complete PhD Thesis see [John Muschelli's](https://github.com/muschellij2/PhD_Thesis). It contains more LaTeX tricks that you might need to use.
+
+
+If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/). You won't need the makefile in that case.
+
+# Previous information
+
+The files described below are still available under the `unused_files` directory. Some of the previous information is still valid. You might be interested in using either the files last edited by [Brian D. Weitzner](https://github.com/weitzner) at [weitzner/jhu-thesis-template](https://github.com/weitzner/jhu-thesis-template) or the original [JHU-Biostats template](http://www.biostat.jhsph.edu/research/thesis.shtml) included here as `unused_files/OLD_FORMAT.tex`. If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/).
+
+## Quick Start
+
 
 1. Install LaTeX and a decent editor (ideally emacs+AUCTeX+RefTeX) on
 your computer.
@@ -25,8 +67,8 @@ pdflatex root
 ```
 Extra compiles may be needed for accurate TOC, List of Figures, etc.
 
-What's Included?
-----------------
+## What's Included?
+
 
 * `thesis.cls` – The TeX class file that contains many of the formatting commands.  
 
@@ -50,8 +92,8 @@ What's Included?
 
 * `jhu11.clo` – **USE AT YOUR OWN RISK** – An old version of an 11pt font "class option" file that DOES NOT FULLY COMPLY with the JHU thesis formatting requirements, but is better than nothing if you want to use a smaller font.
 
-Figures
--------
+## Figures
+
 Figures should be generated as such:
 
 ```tex
