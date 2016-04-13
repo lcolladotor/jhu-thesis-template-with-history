@@ -44,7 +44,11 @@ It might be best to simply clone this repository, start editing and committing y
 If you want to check a complete PhD Thesis see [John Muschelli's](https://github.com/muschellij2/PhD_Thesis). It contains more `LaTeX` tricks that you might need to use.
 
 
-If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/). You won't need the makefile in that case.
+If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/). You won't need the makefile in that case. 
+
+## View at Overleaf
+
+In particular, you might want to see this [read-only version at Overleaf](https://www.overleaf.com/read/tqdzgmrxgbtg). It doesn't have a makefile because they are currently not supported (see [this tweet](https://twitter.com/fellgernon/status/720360139233050624)) and the `Rnw` chapter is basically a regular chapter when using Overleaf since you have to create the `tex` file yourself using `knitr::knit()` and upload the resulting `tex` file and figures to Overleaf.
 
 # Previous information
 
