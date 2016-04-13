@@ -1,15 +1,17 @@
 % This template was originally by R. Jacob Vogelstein
 % Updated on March 1, 2010 by Noah J. Cowan
-% Updated on January 29, 2016 by John Muschelli
-% Updated on April 13, 2016 by Leonardo Collado Torres
+% Updated on May 18, 2014 by Brian Weitzner at https://github.com/weitzner/jhu-thesis-template
+% Updated on January 29, 2016 by John Muschelli at https://github.com/muschellij2/PhD_Thesis
+% Updated on April 13, 2016 by Leonardo Collado Torres and available at https://github.com/lcolladotor/jhu-thesis-template. View (read-only) at Overleaf here https://www.overleaf.com/read/tqdzgmrxgbtg
 
 \documentclass[12pt]{report}
 
 %% This was the setup recommended at https://github.com/weitzner/jhu-thesis-template
 % \documentclass[12pt,oneside,final]{thesis}
 
-\pdfminorversion=5
-\pdfobjcompresslevel=0
+\pdfminorversion=4\relax
+\pdfobjcompresslevel=0\relax
+%% Followed the information from https://www.overleaf.com/latex/examples/creating-pdf-slash-a-and-pdf-slash-x-files/bbbycnbyqhnm#.Vw6_XBMrLm1 to create a PDF/A file in Overleaf
 \usepackage[a-1b]{pdfx} % Need this to create a PDF/A file
 
 \usepackage{pdfpages}
@@ -228,6 +230,8 @@ Doctor of Philosophy }\\
 \printbibliography[title={References}]
 \end{refsection}
 
+%% If using Overleaf, you'll have to upload the resulting tex file & figures
+%% since Overleaf does not support Rnw files right now (April 13, 2016)
 \begin{refsection}[rnw_chapter/rnw_chapter.bib]
 \include{rnw_chapter/rnw_chapter}
 \cleardoublepage

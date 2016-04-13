@@ -13,7 +13,7 @@ date <- date()
 
 This document was generated on \Sexpr{date}.
 
-As shown in Figure \ref{fig:some_fig} and in Table \ref{tab:rtab1} we can see that bla bla.
+As shown in Figure \ref{fig:some_fig} and in Table \ref{tab:rtab1} we can see that bla bla \citep{B}.
 
 
 <<label=some_fig, fig.cap = '{\\bf Figure title } Rest of description'>>=

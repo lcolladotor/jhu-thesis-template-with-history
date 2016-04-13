@@ -31,7 +31,7 @@ To open the PDF file run
 make open
 ```
 
-Finally to start editing `root.tex` run
+Finally to start editing `main.tex` run
 
 ```sh
 make edit
@@ -41,7 +41,7 @@ The file `RJournal_nogeom.sty` is used to change the color of some links and oth
 
 It might be best to simply clone this repository, start editing and committing your changes in case you want to rollback or remember why you changed something. 
 
-If you want to check a complete PhD Thesis see [John Muschelli's](https://github.com/muschellij2/PhD_Thesis). It contains more LaTeX tricks that you might need to use.
+If you want to check a complete PhD Thesis see [John Muschelli's](https://github.com/muschellij2/PhD_Thesis). It contains more `LaTeX` tricks that you might need to use.
 
 
 If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/). You won't need the makefile in that case.
