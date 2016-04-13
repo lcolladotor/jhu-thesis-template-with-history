@@ -2,7 +2,7 @@ JHU Thesis Readme
 =================
 Author: R. Jacob Vogelstein <br>
 Updated by Noah J. Cowan, March 1, 2010 <br>
-Updated by [Brian D. Weitzner](https://github.com/weitzner), April 29, 2014 <br>
+Updated by [Brian D. Weitzner](https://github.com/weitzner), April 29, 2014 as available in [GitHub](https://github.com/weitzner/jhu-thesis-template) and via [Overleaf](https://www.overleaf.com/latex/templates/johns-hopkins-phd-dissertation-template/jmdrczzbrhyx#.Vw7LVhMrL64) as uploaded by Karla Hernandez<br>
 Updated by [John Muschelli](https://github.com/muschellij2), January 29, 2016 and now uses a makefile as available [here](https://github.com/muschellij2/PhD_Thesis) <br>
 Updated by [Leonardo Collado Torres](https://github.com/lcolladotor) on April 13, 2016 as available [here](https://github.com/lcolladotor/jhu-thesis-template)
 
