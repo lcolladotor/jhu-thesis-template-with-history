@@ -113,3 +113,7 @@ Where the figure `myfigure.EXT` can be located in the directory designated by th
 
 Note that no file extension is given in the `includegraphicx` command; this makes the code maximally portable for different graphics drivers. For `pdflatex`, there are many allowable extensions, including `.pdf` and `.jpg` among others. For plain latex, you generally have to use `.eps` files. But, if you hard-code the extension in your LaTeX code, then you will not be able to switch between latex and `pdflatex`.
 
+## View at Overleaf
+
+The version [Brian D. Weitzner](https://github.com/weitzner) is available as an Overleaf template that Karla Hernandez uploaded. View it [here](https://www.overleaf.com/latex/templates/johns-hopkins-phd-dissertation-template/jmdrczzbrhyx#.Vw7LVhMrL64).
+
