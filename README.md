@@ -1,17 +1,17 @@
-JHU Thesis Readme
-=================
+JHU Unofficial Thesis Readme
+============================
 Author: R. Jacob Vogelstein <br>
 Updated by Noah J. Cowan, March 1, 2010 <br>
-Updated by [Brian D. Weitzner](https://github.com/weitzner), April 29, 2014 as available in [GitHub](https://github.com/weitzner/jhu-thesis-template) and via [Overleaf](https://www.overleaf.com/latex/templates/johns-hopkins-phd-dissertation-template/jmdrczzbrhyx#.Vw7LVhMrL64) as uploaded by Karla Hernandez<br>
+Updated by [Brian D. Weitzner](https://github.com/weitzner), April 29, 2014 as available at [GitHub](https://github.com/weitzner/jhu-thesis-template) and as an [Overleaf template](https://www.overleaf.com/latex/templates/johns-hopkins-phd-dissertation-template/jmdrczzbrhyx#.Vw7LVhMrL64) as uploaded by Karla Hernandez (see how to support PDF/A files at the end of this README)<br>
 Updated by [John Muschelli](https://github.com/muschellij2), January 29, 2016 and now uses a makefile as available [here](https://github.com/muschellij2/PhD_Thesis) <br>
-Updated by [Leonardo Collado Torres](https://github.com/lcolladotor) on April 13, 2016 as available [here](https://github.com/lcolladotor/jhu-thesis-template)
+Updated by [Leonardo Collado Torres](https://github.com/lcolladotor) on April 13, 2016 as available at [GitHub](https://github.com/lcolladotor/jhu-thesis-template) or as an [Overleaf template](https://www.overleaf.com/latex/templates/johns-hopkins-university-unofficial-thesis-template/tqdzgmrxgbtg#.Vw-NrRMrJuU)
 
 This archive is intended to simplify the process of creating a thesis
-in LaTeX that complies with the JHU formatting requirements.  
+in LaTeX that complies with the JHU formatting requirements found [here](http://guides.library.jhu.edu/etd/formatting).
 
 # Makefile version
 
-Muschelli added a `makefile` and `Rnw` files to his thesis. Collado Torres simply took Muschelli's thesis and made it into a template. The rest of the README is as-is from the time Weitzner modified. To use this version you will have to modify the `root.tex` file and add chapters as necessary. Then you will have to update the `makefile` with the names of the new chapters. 
+Muschelli added a `makefile` and `Rnw` files to his thesis. Collado Torres simply took Muschelli's thesis, made it into a template and submitted it to Overleaf. The rest of the README is as-is from the time Weitzner modified. To use this version you will have to modify the `main.tex` file and add chapters as necessary. Then you will have to update the `makefile` with the names of the new chapters. 
 
 If you want to reproduce the current `PhD_Thesis.pdf` file, simply run
 
@@ -44,15 +44,17 @@ It might be best to simply clone this repository, start editing and committing y
 If you want to check a complete PhD Thesis see [John Muschelli's](https://github.com/muschellij2/PhD_Thesis). It contains more `LaTeX` tricks that you might need to use.
 
 
-If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/). You won't need the makefile in that case. 
+## Use at Overleaf
 
-## View at Overleaf
+If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/). You won't need the `makefile` in that case. 
 
-In particular, you might want to see this [read-only version at Overleaf](https://www.overleaf.com/read/tqdzgmrxgbtg). It doesn't have a makefile because they are currently not supported (see [this tweet](https://twitter.com/fellgernon/status/720360139233050624)) and the `Rnw` chapter is basically a regular chapter when using Overleaf since you have to create the `tex` file yourself using `knitr::knit()` and upload the resulting `tex` file and figures to Overleaf.
+In particular, you might want to see this [read-only version at Overleaf](https://www.overleaf.com/read/tqdzgmrxgbtg). It doesn't have a `makefile` because they are currently not supported (see [this tweet](https://twitter.com/fellgernon/status/720360139233050624)). Also, the `Rnw` chapter is basically a regular chapter when using Overleaf since you have to create the `tex` file yourself using `knitr::knit()` and upload the resulting `tex` file and figures to Overleaf.
+
+To go ahead and use this template in Overleaf, go to the [Overleaf template](https://www.overleaf.com/latex/templates/johns-hopkins-university-unofficial-thesis-template/tqdzgmrxgbtg#.Vw-NrRMrJuU) and click on _open as template_.
 
 # Previous information
 
-The files described below are still available under the `unused_files` directory. Some of the previous information is still valid. You might be interested in using either the files last edited by [Brian D. Weitzner](https://github.com/weitzner) at [weitzner/jhu-thesis-template](https://github.com/weitzner/jhu-thesis-template) or the original [JHU-Biostats template](http://www.biostat.jhsph.edu/research/thesis.shtml) included here as `unused_files/OLD_FORMAT.tex`. If you don't want to install `LaTeX` simply use [Overleaf](https://www.overleaf.com/) or [ShareLaTeX](https://www.sharelatex.com/).
+The files described below are still available under the `unused_files` directory. Some of the previous information is still valid. You might be interested in using either the files last edited by [Brian D. Weitzner](https://github.com/weitzner) at [weitzner/jhu-thesis-template](https://github.com/weitzner/jhu-thesis-template) or the original [JHU-Biostats template](http://www.biostat.jhsph.edu/research/thesis.shtml) included here as `unused_files/OLD_FORMAT.tex`.
 
 ## Quick Start
 
@@ -113,7 +115,7 @@ Where the figure `myfigure.EXT` can be located in the directory designated by th
 
 Note that no file extension is given in the `includegraphicx` command; this makes the code maximally portable for different graphics drivers. For `pdflatex`, there are many allowable extensions, including `.pdf` and `.jpg` among others. For plain latex, you generally have to use `.eps` files. But, if you hard-code the extension in your LaTeX code, then you will not be able to switch between latex and `pdflatex`.
 
-## View at Overleaf
+## Use at Overleaf
 
-The version by [Brian D. Weitzner](https://github.com/weitzner) is available as an Overleaf template that Karla Hernandez uploaded. View it [here](https://www.overleaf.com/latex/templates/johns-hopkins-phd-dissertation-template/jmdrczzbrhyx#.Vw7LVhMrL64).
+The version by [Brian D. Weitzner](https://github.com/weitzner) is available as an Overleaf template that Karla Hernandez uploaded. View it [here](https://www.overleaf.com/latex/templates/johns-hopkins-phd-dissertation-template/jmdrczzbrhyx#.Vw7LVhMrL64). Note that it does not include support for PDF/A files as of the version available on April 13, 2016. However, you can add PDF/A file support by following the instructions available [here](https://www.overleaf.com/latex/examples/creating-pdf-slash-a-and-pdf-slash-x-files/bbbycnbyqhnm#.Vw6_XBMrLm1).
 
